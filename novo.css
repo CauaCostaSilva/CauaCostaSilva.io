@@ -1,0 +1,249 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte do site */
+body {
+    font-family: 'Fugaz One', cursive, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilizando o título principal */
+#titulo-principal h1 {
+    text-align: center;
+    padding: 60px 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #1e3a8a, #4f84e1);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Estilizando o cabeçalho e o menu */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: #4f84e1;
+    transform: translateY(-5px);
+}
+
+/* Estilizando as seções */
+#div1, .div-section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#div1:hover, .div-section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.subtitulos {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Estilo das listas de habilidades */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo para a seção de projetos */
+#titulo-projeto {
+    text-align: center;
+}
+
+#container-projetos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.div-projetos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-projetos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.projeto {
+    margin-bottom: 20px;
+}
+
+.titulos-projetos {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.link-projetos {
+    color: #1e3a8a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-projetos:hover {
+    color: #4f84e1;
+    transform: translateY(-5px);
+}
+
+/*  Projetos Design*/
+.div-projetos-design {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+/* Estilo para a seção sobre mim */
+#TituloDesigner {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2rem;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+#quem-sou-eu {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0000001a;
+    line-height: 20;
+    font-size: 1.1rem;
+    color: #555;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 7px;
+    row-gap: 7px;
+    width: 75%;
+}
+
+.proj {
+    margin: 5px;
+}
+
+#sobre-mim {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0000001a;
+    line-height: 20;
+    color: #555;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 75%;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #1e3a8a;
+    color: rgb(248, 248, 248);
+    padding: 20px 8  ;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 15px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+footer a:hover {
+    color: #4f84e1;
+    transform: translateY(-3px);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #container-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #container-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    #titulo-principal h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulos, .titulos-projetos {
+        font-size: 1.3rem;
+    }
+
+    .link-projetos {
+        font-size: 1rem;
+    }
+
+    #quem-sou-eu {
+        padding: 20px;
+    }
+}
